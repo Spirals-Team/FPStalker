@@ -38,12 +38,14 @@ In order to optimize the lambda parameter, you just need to launch python main.p
 
 # Benchmark
 
-# For the hybrid algorithm
+For the hybrid algorithm:
+
 ```ruby
 python automlbench myfilesprefix 4
 ```
 Where 4 has to be replaced by the number of cores on your machine.
 
+For the rule-based algorithm:
 ```ruby
-python automlbench myfilesprefix 4
+python autorulesbench myfilesprefix 4
 ```
