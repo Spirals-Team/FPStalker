@@ -34,5 +34,3 @@ In order to optimize the lambda parameter, you just need to launch python main.p
 python automlbench myfilesprefix 4 , where 4 has to be replaced by the number of cores on your machine.
 
 python automlbench myfilesprefix 4 
-
-
