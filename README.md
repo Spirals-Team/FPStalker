@@ -1,3 +1,5 @@
+Repo containing the code of FPStalker's paper.
+
 # Database
 Change the connection to the database at the top of the main
 
@@ -34,7 +36,10 @@ python main.py automl myexpname 6
 
 In current state, it loads the model contained in the data folder.
 To train a new model, one just needs to change the load parameter of train_ml to False.
-In order to optimize the lambda parameter, you just need to launch python main.py lambda
+In order to optimize the lambda parameter, you just need to launch
+```ruby
+python main.py lambda
+```
 
 # Benchmark
 
