@@ -1,0 +1,7 @@
+mysqlclient
+scikit-learn
+matplotlib
+python-Levenshtein
+numpy
+ua_parser
+scipy

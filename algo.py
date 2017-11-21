@@ -1249,7 +1249,7 @@ def benchmark_parallel_f_ml(fn, cur, nb_fps_query, nb_cores):
     random.seed(seed)
     nb_fps_query = int(nb_fps_query / 50)
 
-    cur.execute("SELECT *, NULL as canvasJS FROM extensionData LIMIT 0," + str(nb_fps_query))
+    cur.execute("SELECT *, NULL as canvasJS FROM extensionDataScheme LIMIT 0," + str(nb_fps_query))
     fps = cur.fetchall()
 
     attributes = Fingerprint.INFO_ATTRIBUTES + Fingerprint.HTTP_ATTRIBUTES + \
@@ -1347,7 +1347,7 @@ def benchmark_parallel_f_ml(fn, cur, nb_fps_query, nb_cores):
 
     # Fingerprints have been distributed, we can start to measure
     print("Start 2nd fake sql query")
-    cur.execute("SELECT *, NULL as canvasJS FROM extensionData LIMIT 1000, 2000")
+    cur.execute("SELECT *, NULL as canvasJS FROM extensionDataScheme LIMIT 1000, 2000")
     print("Finish 2nd fake sql query")
     fps = cur.fetchall()
     nb_iter = 0
@@ -1452,7 +1452,7 @@ def benchmark_parallel_f_rules(fn, cur, nb_fps_query, nb_cores):
     random.seed(seed)
     nb_fps_query = int(nb_fps_query / 50)
 
-    cur.execute("SELECT *, NULL as canvasJS FROM extensionData LIMIT 0," + str(nb_fps_query))
+    cur.execute("SELECT *, NULL as canvasJS FROM extensionDataScheme LIMIT 0," + str(nb_fps_query))
     fps = cur.fetchall()
 
     attributes = Fingerprint.INFO_ATTRIBUTES + Fingerprint.HTTP_ATTRIBUTES + \
@@ -1550,7 +1550,7 @@ def benchmark_parallel_f_rules(fn, cur, nb_fps_query, nb_cores):
 
     # Fingerprints have been distributed, we can start to measure
     print("Start 2nd fake sql query")
-    cur.execute("SELECT *, NULL as canvasJS FROM extensionData LIMIT 1000, 2000")
+    cur.execute("SELECT *, NULL as canvasJS FROM extensionDataScheme LIMIT 1000, 2000")
     print("Finish 2nd fake sql query")
     fps = cur.fetchall()
     nb_iter = 0
