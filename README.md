@@ -58,9 +58,9 @@ python main.py auto myexpname rulebased 6
 ```ruby
 python main.py automl myexpname 6
 ```
-
-In current state, it loads the model contained in the data folder.
-To train a new model, one just needs to change the load parameter of train_ml to False.
+In current state, it loads the random forest model contained in the `data/my_ml_model`.
+It was generated on the conditions specified in the article, i.e. 
+To train a new model, one just needs to change the load parameter of the `train_ml` function (in main) to False.
 In order to optimize the lambda parameter, you just need to launch
 ```ruby
 python main.py lambda
